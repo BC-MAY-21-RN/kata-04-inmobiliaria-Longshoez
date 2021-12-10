@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Los gavilanes",
+        "adress": "Av. De la Soledad #123",
+        "rooms": 3,
+        "bathrooms": 2,
+        "surface": "220 ft²",
+        "price": 2300,
+        "rating": 0,
+        "favorite": false,
+        "imageURL": "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Las gardenias",
+        "adress": "Av. Miguel de la Marid #456",
+        "rooms": 2,
+        "bathrooms": 1,
+        "surface": "180 ft²",
+        "price": 1500,
+        "rating": 0,
+        "favorite": false,
+        "imageURL": "https://archello.com/thumbs/images/2018/10/11/Contemporary-Modern-House-Design-6.1539270983.8601.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bugambilia",
+        "adress": "Calle Zapotlan #783",
+        "rooms": 3,
+        "bathrooms": 1,
+        "surface": "225 ft²",
+        "price": 2000,
+        "rating": 0,
+        "favorite": false,
+        "imageURL": "https://images.adsttc.com/media/images/5ecd/d50b/b357/65c6/7300/009e/slideshow/02D.jpg"
+    },
+    {
+        "id": 4,
+        "name": "La Carreta",
+        "adress": "Calle Jesús #1100",
+        "rooms": 1,
+        "bathrooms": 1,
+        "surface": "150 ft²",
+        "price": 1300,
+        "rating": 0,
+        "favorite": false,
+        "imageURL": "https://markstewart.com/wp-content/uploads/2021/04/1_SB4-Front-View.jpg"
+    },
+    {
+        "id": 5,
+        "name": "El mirador",
+        "adress": "Calle Eulogio Parra #25-A",
+        "rooms": 2,
+        "bathrooms": 1,
+        "surface": "185 ft²",
+        "price": 1800,
+        "rating": 0,
+        "favorite": false,
+        "imageURL": "https://i.pinimg.com/474x/e9/82/ee/e982eec53ad03e7a475a2bfff1258d6d.jpg"
+    }
+]
