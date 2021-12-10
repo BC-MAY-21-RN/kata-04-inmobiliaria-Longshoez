@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Penumbra",
+        "location": "W. Mol #666",
+        "rooms": 3,
+        "bathrooms": 2,
+        "surface": "424 ft²",
+        "price": 2300,
+        "rating": 4,
+        "favorite": false,
+        "imageURL": "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Black brick",
+        "location": "W Deafheaven",
+        "rooms": 2,
+        "bathrooms": 6,
+        "surface": "42 ft²",
+        "price": 34,
+        "rating": 3.5,
+        "favorite": false,
+        "imageURL": "https://archello.com/thumbs/images/2018/10/11/Contemporary-Modern-House-Design-6.1539270983.8601.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Metatron",
+        "location": "Darkside street #25",
+        "rooms": 3,
+        "bathrooms": 1,
+        "surface": "42 ft²",
+        "price": 2000,
+        "rating": 4.5,
+        "favorite": false,
+        "imageURL": "https://images.adsttc.com/media/images/5ecd/d50b/b357/65c6/7300/009e/slideshow/02D.jpg"
+    },
+    {
+        "id": 4,
+        "name": "The incident",
+        "location": "Av. Isaac Esban 2014",
+        "rooms": 100,
+        "bathrooms": 1,
+        "surface": "42 ft²",
+        "price": 2014,
+        "rating": 2,
+        "favorite": false,
+        "imageURL": "https://markstewart.com/wp-content/uploads/2021/04/1_SB4-Front-View.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Coherence 2013",
+        "location": "James Ward Brykit st #'15",
+        "rooms": 6,
+        "bathrooms": 4,
+        "surface": "42 ft²",
+        "price": 2015,
+        "rating": 5,
+        "favorite": false,
+        "imageURL": "https://i.pinimg.com/474x/e9/82/ee/e982eec53ad03e7a475a2bfff1258d6d.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Europe",
+        "location": "Im sorry John #3000",
+        "rooms": 3,
+        "bathrooms": 0,
+        "surface": "3000 ft²",
+        "price": 156,
+        "rating": 3,
+        "favorite": false,
+        "imageURL": "https://i.pinimg.com/474x/e9/82/ee/e982eec53ad03e7a475a2bfff1258d6d.jpg"
+    }
+]
