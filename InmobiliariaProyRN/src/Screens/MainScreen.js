@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SafeAreaView, Text, ScrollView } from 'react-native'
+import { SafeAreaView, StyleSheet, ScrollView } from 'react-native'
 import Card from '../Components/Card'
 import data from '../helpers/Listings.json'
 
@@ -8,7 +8,7 @@ export default class MainScreen extends Component {
 
     render() {
         return (
-            <SafeAreaView>
+            <SafeAreaView style={styles.Main}>
                 <ScrollView>
                     {
                         data?.map((data, i) => {
@@ -52,3 +52,10 @@ export default class MainScreen extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    Main:{
+        backgroundColor: 'white',
+        height: '100%',
+    },
+});

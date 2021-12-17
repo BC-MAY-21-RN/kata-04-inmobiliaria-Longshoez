@@ -1,16 +1,15 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import {Icon} from 'react-native-elements'
-import styled from 'styled-components/native'
 
 export default function IconCombo(props) {
 
-    const {icon,color, data, iconType} = props
+    const {icon,color, data, iconType, large} = props
 
     return (
-        <View>
-            <Icon name={icon} type={iconType} color={color} />
-            <Text>{data}</Text>
+        <View style={large ? (styles.largeIconCombo) : (styles.iconCombo)}>
+            <Icon style={styles.icon} name={icon} type={iconType} color={color} />
+            <Text style={large ? (styles.largeIconComboText) : (styles.iconComboText)}>{data}</Text>
         </View>
     )    
 }
@@ -19,6 +18,29 @@ IconCombo.defaultProps = {
     iconType: "ionicon",
 }
 
-const StyledView = styled.View`
-    background-color: grey;
-`
+const styles = StyleSheet.create({
+    largeIconCombo:{
+        width: 100,
+        backgroundColor: 'red',
+    },
+    largeIconComboText:{
+        color: 'grey', 
+        width: 100,
+        justifyContent: 'center',
+        alignSelf: 'center',
+    },
+    iconCombo:{
+        display: 'flex',                
+        flexDirection: 'row',      
+        width: 80,
+    },
+    icon:{
+        display: 'flex',
+        width: 40,        
+    },
+    iconComboText:{
+        color: 'black',       
+        justifyContent: 'center',
+        alignSelf: 'center',                       
+    }
+});
