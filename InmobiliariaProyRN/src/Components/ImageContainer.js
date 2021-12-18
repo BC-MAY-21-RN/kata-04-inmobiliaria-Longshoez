@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import {Icon} from 'react-native-elements'
-import styled from 'styled-components/native'
 
 export default function ImageContainer(props) {        
 
@@ -9,32 +8,22 @@ export default function ImageContainer(props) {
     const {rating , image } = props;
 
     return (
-        <View style={imgContainer}>
-            <Image style={ratingImage} source={{uri: image}}></Image>
+        <View style={imgContainer}>            
+            <Image source={{uri: image}} style={ratingImage}/>    
+            {console.log(image)}    
             <View style={ratingContainer}>
                 <Icon name='star' type={"font-awesome"} color='orange' size={12} style={icon}/>
                 <Text style={ratingText}>{rating}</Text>
             </View>
         </View>        
     )
-
-     /*
-        imageCont
-            Image->image
-            ratingComp
-                star-icon
-                Text->Rating 
-    */
 }
 const styles = StyleSheet.create({
     imgContainer:{        
-        borderWidth: 1,
-        borderColor: 'red',
         width: 115,
         height: 115,
         justifyContent: 'center',
-        alignItems: 'center',        
-        borderRadius: 10,        
+        alignItems: 'center',                
     },
     ratingContainer:{                
         position: 'absolute',
@@ -42,7 +31,7 @@ const styles = StyleSheet.create({
         display: 'flex',    
         flexDirection: 'row',                
         backgroundColor: '#fbedb7',
-        borderRadius: 8,
+        borderRadius: 10,
         padding: 4,        
         zIndex: 2,
         justifyContent: 'center',
@@ -50,8 +39,7 @@ const styles = StyleSheet.create({
     ratingText:{
         marginRight: 5,
         alignSelf: 'flex-start',
-        color: 'red',
-        
+        color: '#7A6229',        
     },
     icon:{
         marginRight: 3,
@@ -61,6 +49,9 @@ const styles = StyleSheet.create({
         width: 12,
     },
     ratingImage:{
-        zIndex: 1,
+        zIndex: 10,
+        borderRadius: 10,
+        width: '100%',
+        height: '100%',
     }
 })

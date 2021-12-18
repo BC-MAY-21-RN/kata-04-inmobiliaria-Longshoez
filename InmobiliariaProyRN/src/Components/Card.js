@@ -31,8 +31,8 @@ export default function Card(props) {
                     <IconCombo icon={"resize-outline"} data={surface} color={"#949494"}/>
                 </View>
 
-                <View style={priceAndHeart}>
-                    <Text style={priceTag}>${price}/m</Text>
+                <View style={priceAndHeart}>                    
+                    <Text style={priceTag}>{price}/m</Text>
                     <Icon reverse name="heart" type="font-awesome" color="orange" size={15} onPress={showToast}/>
                 </View>
             </View>
@@ -46,11 +46,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         width: '90%',
         height: 115,
-        margin: 20,
+        margin: 20,        
     },
 
     rowImage:{
         paddingRight: 5,
+        marginLeft: 14,
     },
 
     rowContent:{
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
         marginRight: 110,
         fontWeight: '700',
         color: '#151525',
-        fontSize: 24,
+        fontSize: 22,
         paddingLeft: 10,
     },
     nameTag:{        

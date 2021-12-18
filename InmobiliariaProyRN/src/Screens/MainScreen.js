@@ -14,7 +14,7 @@ export default class MainScreen extends Component {
                         data?.map((data, i) => {
                             return <Card 
                                         key={i} 
-                                        imageUrl={data.imageURL}
+                                        imageUrl={data.image}
                                         rating={data.rating}
                                         name={data.name}
                                         location={data.location}

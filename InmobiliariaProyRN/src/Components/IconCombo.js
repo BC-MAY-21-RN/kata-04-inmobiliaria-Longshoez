@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         display: 'flex',                
         flexDirection: 'row',     
-                        
+
         alignItems: 'center',
     },
     largeIconComboText:{
@@ -42,9 +42,10 @@ const styles = StyleSheet.create({
         display: 'flex',
         width: 40,        
     },
-    iconComboText:{
-        color: 'black',
-        fontWeight: '500',        
+    iconComboText:{                
+        fontWeight: '700',
+        color: '#151525',
+        fontSize: 15,
         alignSelf: 'center',
     }
 });
