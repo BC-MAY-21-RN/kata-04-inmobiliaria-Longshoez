@@ -20,27 +20,29 @@ IconCombo.defaultProps = {
 
 const styles = StyleSheet.create({
     largeIconCombo:{
-        width: 100,
-        backgroundColor: 'red',
+        width: '100%',
+
+        alignItems: 'center',
+        display: 'flex',                
+        flexDirection: 'row',      
     },
     largeIconComboText:{
         color: 'grey', 
-        width: 100,
-        justifyContent: 'center',
-        alignSelf: 'center',
+        width: '100%',
+        justifyContent: 'center',        
     },
     iconCombo:{
         display: 'flex',                
         flexDirection: 'row',      
-        width: 80,
+        width: 70,        
     },
     icon:{
         display: 'flex',
         width: 40,        
     },
     iconComboText:{
-        color: 'black',       
-        justifyContent: 'center',
-        alignSelf: 'center',                       
+        color: 'black',
+        fontWeight: '500',        
+        alignSelf: 'center',
     }
 });

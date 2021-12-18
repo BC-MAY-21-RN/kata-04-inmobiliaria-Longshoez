@@ -9,7 +9,7 @@ export default class MainScreen extends Component {
     render() {
         return (
             <SafeAreaView style={styles.Main}>
-                <ScrollView>
+                <ScrollView>                    
                     {
                         data?.map((data, i) => {
                             return <Card 
@@ -25,28 +25,7 @@ export default class MainScreen extends Component {
                                         favorite={data.favorite}
                                     />
                         })
-
-                    /*
-                        Card
-                            imageCont
-                                Image->image
-                                ratingComp
-                                    star-icon
-                                    Text->Rating
-                            Text->name
-                            IconCombo.Large
-                                location-icon
-                                Text->location
-                            View - horizontal
-                                IconCombo -> bed-icon + data.bed
-                                IconCombo -> bath-icon + data.bth
-                                IconCombo -> squr-icon + data.sqr
-                            View - horizontal
-                                Text-> ${price}/m
-                                lov-Icon (give functionality?)
-
-                    */
-                    }
+                    }                                                      
                 </ScrollView>
             </SafeAreaView>
         )
