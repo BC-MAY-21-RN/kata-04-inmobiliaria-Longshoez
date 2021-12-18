@@ -8,8 +8,8 @@ import {Icon} from 'react-native-elements'
 export default function Card(props) {
 
      //Destructuring
-    const {imageUrl, rating, name, location, bedrooms, bathrooms, surface, price, } = props
-    const { cardStyle, rowImage, rowContent, iconContainer, priceAndHeart, textColor } = styles
+    const {imageUrl, rating, name, location, bedrooms, bathrooms, surface, price } = props
+    const { cardStyle, rowImage, rowContent, iconContainer, priceAndHeart, priceTag, nameTag, locationStyle } = styles
 
     const showToast = () => {
         ToastAndroid.show("Added to favorites", ToastAndroid.SHORT)
@@ -22,18 +22,17 @@ export default function Card(props) {
             </View>
             
             <View style={rowContent}>
-                <Text style={textColor}>{name}</Text>
-                <IconCombo icon={"location-outline"} data={location} color={"red"} large={true}/>
+                <Text style={nameTag}>{name}</Text>
+                <IconCombo style={locationStyle} icon={"location-outline"} data={location} color={"red"} large={true}/>
                 
                 <View style={iconContainer}>
                     <IconCombo icon={"bed-outline"} data={bedrooms} color={"#949494"} type={"font-awesome"}/>
-                    <IconCombo icon={"bath"} data={bathrooms} color={"#949494"} type={"font-awesome"}/>
+                    <IconCombo icon={"bed-outline"} data={bathrooms} color={"#949494"} type={"font-awesome"}/>
                     <IconCombo icon={"resize-outline"} data={surface} color={"#949494"}/>
                 </View>
 
-
                 <View style={priceAndHeart}>
-                    <Text style={textColor}>$ {price}/m</Text>
+                    <Text style={priceTag}>${price}/m</Text>
                     <Icon reverse name="heart" type="font-awesome" color="orange" size={15} onPress={showToast}/>
                 </View>
             </View>
@@ -51,32 +50,48 @@ const styles = StyleSheet.create({
     },
 
     rowImage:{
-        paddingRight: 20,
+        paddingRight: 5,
     },
 
     rowContent:{
-        flex: 1,
-        borderWidth: 2,
-        borderColor: 'orange',                     
+        flex: 1,        
     },    
     iconContainer:{
         flexDirection: 'row',
     },
-    priceAndHeart:{
-        display: 'flex',                
-        flexDirection: 'row',
-        borderWidth: 1,
-        borderColor: 'red',               
+    priceAndHeart:{        
+        flexDirection: 'row',               
+        alignItems: 'center',        
+        height: 40,
     },
 
-    textHeader:{
-
+    priceTag:{
+        display: 'flex',                                
+        marginRight: 110,
+        fontWeight: '700',
+        color: '#151525',
+        fontSize: 24,
+        paddingLeft: 10,
     },
-
-    textColor:{
-        color: 'black',
+    nameTag:{        
+        width: 250,
+        marginRight: 110,        
+        color: '#151525',
+        fontSize: 24,
+        paddingLeft: 10,
+    },
+    locationStyle:{        
+        marginRight: 110,        
+        color: '#151525',
+        fontSize: 24,
+        paddingLeft: 10,        
     }
 })
+
+Card.defaultProps = {
+    price: "300",
+}
+
 /*
 const StyledView = styled.View`     
 `

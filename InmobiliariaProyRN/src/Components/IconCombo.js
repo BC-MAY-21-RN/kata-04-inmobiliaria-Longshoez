@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
 
         alignItems: 'center',
         display: 'flex',                
-        flexDirection: 'row',      
+        flexDirection: 'row',     
+                        
+        alignItems: 'center',
     },
     largeIconComboText:{
         color: 'grey', 
@@ -34,7 +36,7 @@ const styles = StyleSheet.create({
     iconCombo:{
         display: 'flex',                
         flexDirection: 'row',      
-        width: 70,        
+        width: 65,        
     },
     icon:{
         display: 'flex',
